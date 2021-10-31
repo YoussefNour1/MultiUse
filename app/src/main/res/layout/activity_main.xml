@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_back"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="270dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_search"
+            android:ems="10"
+            android:hint="@string/search_or_enter_web_address"
+            android:importantForAutofill="no"
+            android:inputType="textUri"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#938E8E"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/webView"
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#980D3C"
+            android:text="@string/go"
+            app:icon="@drawable/ic_search"
+            app:iconPadding="4dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/musicPlayer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/music_player"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/videoPlayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/videoPlayer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/videoPlayer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/video_player"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

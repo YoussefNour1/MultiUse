@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Multi Use</string>
+    <string name="webview">WebView</string>
+    <string name="music_player">Music Player</string>
+    <string name="video_player">Video Player</string>
+    <string name="go">Go</string>
+    <string name="search_or_enter_web_address">Search or enter web address</string>
+    <string name="song_name">Keify Keda | كيفي كدا</string>
+    <string name="wagoza">WEGZ × DISCO MISR</string>
+    <string name="tv">tv</string>
+</resources>
